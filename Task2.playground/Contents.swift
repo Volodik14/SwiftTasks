@@ -1,11 +1,14 @@
 import UIKit
 
 func getFirstNumber(word: String) -> Int? {
+    // Проходимся по буквам по порядку и если это цифра, то возвращаем.
     for char in word {
         if let number = char.wholeNumberValue {
             return number
         }
     }
+    
+    // На случай если всё же нету цифр.
     return nil
 }
 
