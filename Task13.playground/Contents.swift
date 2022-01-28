@@ -16,5 +16,5 @@ func isNumberLucky(num: Int) -> Bool {
 }
 
 let input = 12344321
-print(isNumberLucky(num: input))
+print(isNumberLucky(num: input) ? "YES" : "NO")
 
