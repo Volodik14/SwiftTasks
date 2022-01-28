@@ -12,7 +12,7 @@ func getOnceWrittenChars(string: String) -> Set<Character> {
             usedChars.insert(char)
         }
     }
-    // Вычитая из появившихся символов появившиеся дважды получаем уникальные.
+    // Вычитая из появившихся символов (в принципе) появившиеся дважды, получаем уникальные.
     return usedChars.subtracting(twiceUsedChars)
 }
 
